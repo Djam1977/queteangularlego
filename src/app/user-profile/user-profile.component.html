@@ -1,0 +1,6 @@
+<img [src] = "user.photo" [alt] = "user.firstName">
+{{user.quote}} 
+<input type="text" [(ngModel)]="user.quote">
+<p *ngIf="afficher">Age: {{user.age}}</p>
+<p>Nom:{{user.name}}, Prénom: {{user.firstName}}</p>
+<button (click)="enleverlage()">click here</button>
